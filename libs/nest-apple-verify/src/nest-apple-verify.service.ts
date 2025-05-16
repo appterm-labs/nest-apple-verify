@@ -3,7 +3,7 @@ import * as jwt from 'jsonwebtoken';
 import * as jwksClient from 'jwks-rsa';
 
 @Injectable()
-export class AppleAuthService {
+export class NestAppleVerifyService {
   private readonly client = jwksClient({
     jwksUri: 'https://appleid.apple.com/auth/keys',
   });
