@@ -1,6 +1,6 @@
 {
   "author": "Ege Sabanci <esabanci@appterm.co>",
-  "name": "nest-apple-verify",
+  "name": "@appterm-labs/nest-apple-verify",
   "version": "0.0.1",
   "description": "NestJS module for verify Apple Sign-in identifier-token (idToken)",
   "main": "dist/index.js",
