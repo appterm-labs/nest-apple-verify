@@ -1,16 +1,22 @@
 {
   "author": "Ege Sabanci <esabanci@appterm.co>",
   "name": "@appterm-labs/nest-apple-verify",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "NestJS module for verify Apple Sign-in identifier-token (idToken)",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "libs/nest-apple-verify/dist/index.js",
+  "types": "libs/nest-apple-verify/dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./libs/nest-apple-verify/dist/index.d.ts",
+      "require": "./libs/nest-apple-verify/dist/index.js",
+      "import": "./libs/nest-apple-verify/dist/index.js"
+    }
+  },
   "license": "WTFPL",
   "scripts": {
     "build": "nest build",
     "build:lib": "tsc -p libs/nest-apple-verify/tsconfig.lib.json",
-    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
-    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \"libs/**/*.ts\""
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
   },
   "dependencies": {
     "@nestjs/common": "^10.0.0",
